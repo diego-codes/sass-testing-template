@@ -1,5 +1,5 @@
 @import 'true';
-@import 'rem';
+@import '../rem';
 
 @include describe('rem()') {
   @include it('should return a rem unit given a unitless value') {
