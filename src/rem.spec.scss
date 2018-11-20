@@ -1,0 +1,12 @@
+@import 'true';
+@import 'rem';
+
+@include describe('rem()') {
+  @include it('should return a rem unit given a unitless value') {
+    @include assert-equal(px-to-rem(10), 1.6rem);
+  }
+
+  @include it('should return a rem unit given a value with unit') {
+    @include assert-equal(px-to-rem(10px), 1.6rem);
+  }
+}

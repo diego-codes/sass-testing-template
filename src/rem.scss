@@ -1,0 +1,7 @@
+/// Transforms a px value to rem
+/// @param {Number} $px  pixel value
+/// @return {Length} rem value
+@function px-to-rem ($px) {
+  $base: if(unitless($px), 16, 16px);
+  @return ($base / $px) * 1rem;
+}
